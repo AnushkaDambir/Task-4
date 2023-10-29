@@ -2,7 +2,6 @@
 #include <iostream>
 #include <vector>
 #include <string>
-
 struct Task {
     std::string description;
     bool completed;
@@ -16,7 +15,6 @@ public:
     void addTask(const std::string& description) {
         tasks.push_back({description, false});
     }
-
     void viewTasks() const {
         std::cout << "Task List:" << std::endl;
         for (size_t i = 0; i < tasks.size(); ++i) {
